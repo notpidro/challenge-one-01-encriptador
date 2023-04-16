@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/ico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce5b9ad9fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="imagenes/alura challenges.png" alt="Alura Challenges" class="imagen-alura-challenges">
+            <img src="imagenes/ONE.png" alt="Oracle Next Education" class="imagen-one">
+        </div>
+    </header>
+    <main>
+        <section class="caja-encriptador">
+            <div class="caja-texto-botones">
+                <textarea class="texto-ingresado" placeholder="Ingresa tu texto aqui."></textarea>
+                <div class="botones">
+                    <input type="button" value="Encriptar" class="encriptar boton">
+                    <input type="button" value="Desencriptar" class="desencriptar boton">
+                    <input type="button" value="Limpiar" class="limpiar boton">
+                </div>
+                <p><i id="icono-exclamacion" class="fa fa-3x fa-exclamation-circle"></i>Solo letras minusculas, sin acentos.</p>
+            </div>
+            <div class="caja-resultado-copiar">
+                <p class="resultado" id="ningun-resultado">
+                    <img src="imagenes/Muñeco.svg" alt="Niño buscando" class="imagen-ninho">
+                    <span class="info-resultado">No se encontro ningun mensaje.</span>
+                    <span class ="info-resultado">Ingresa tu mensaje para que lo encriptemos.</span>
+                </p>
+                <p class="resultado" id="texto-encriptado"></p>
+                <div class="botones">
+                    <input type="button" value="Copiar" class="copiar boton">
+                </div>
+            </div>
+        </section>
+        <div class="ventana-emergente" hidden><p>Copiado al portapapeles</p></div>
+    </main>
+    <footer>
+        <p>&copy Copyright Walter F. Campillay P.</p>
+        <div class="caja-links">
+            <a href="https://www.linkedin.com/in/walter-campillay/" target="_blank"><img src="imagenes/linkedin-in.svg" alt="Perfil LinkedIn Walter"></a>
+            <a href="https://github.com/notpidro" target="_blank"><img src="imagenes/github.svg" alt="Perfil GitHub Walter"></a>
+            <a href="https://app.aluracursos.com/user/walter-campillay" target="_blank"><img src="imagenes/a-alura.svg" alt="Perfil alura Walter"></a>
+        </div>
+    </footer>
+</body>
+<script type="module" src="encode.js"></script>
+</html>
