@@ -55,11 +55,11 @@ function desencriptarTexto() {
     const textoIngresado = texto.value;
     let textoDeco = textoIngresado;
     if (textoAceptado.test(textoIngresado)) {
-        textoDeco = textoDeco.replace(/ai/, "a");
-        textoDeco = textoDeco.replace(/enter/, "e");
-        textoDeco = textoDeco.replace(/imes/, "i");
-        textoDeco = textoDeco.replace(/ober/, "o");
-        textoDeco = textoDeco.replace(/ufat/, "u");
+        textoDeco = textoDeco.replace(/ai/g, "a");
+        textoDeco = textoDeco.replace(/enter/g, "e");
+        textoDeco = textoDeco.replace(/imes/g, "i");
+        textoDeco = textoDeco.replace(/ober/g, "o");
+        textoDeco = textoDeco.replace(/ufat/g, "u");
         mostrarTexto();
         return resultado.textContent = textoDeco;
     } else {
